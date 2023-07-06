@@ -1,0 +1,129 @@
+ANSWER 1:-
+Built-in functions are functions that are predefined in Python and readily available for use without requiring any additional coding or imports.
+my_list = [1, 2, 3, 4, 5]
+length = len(my_list)
+print(length)  
+
+user defined function are created by the user as per their requirement
+def square(num):
+    return num ** 2
+
+result = square(5)
+print(result) 
+
+
+
+ANSWER 2:-
+Positional arguments:
+
+Positional arguments are passed to a function based on their position or order.
+The arguments are matched with the function parameters in the order they are provided.
+def greet(name, message):
+    print(f"Hello, {name}! {message}")
+
+greet("John", "How are you?")  
+
+Keyword arguments are passed to a function using the argument name and the corresponding value.
+def greet(name, message):
+    print(f"Hello, {name}! {message}")
+
+ANSWER3:-
+The return statement allows a function to pass data back to the caller, 
+allowing the caller to use the result of the function's computation or perform further operations based on the returned value.
+A function can have multiple return statements, but only one return statement is executed during the function's execution.
+def get_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    else:
+        return "F"
+
+grade1 = get_grade(85)
+grade2 = get_grade(95)
+
+print(grade1) 
+print(grade2) 
+
+ANSWER 4:-
+Lambda keyword in python is used to define anonyms function as it can no. of arguement but have only one expreession .
+lamba cannot be used for if the programmme is complex.
+a=lambda x,y=x+y:
+print(lambda(4))
+
+ANSWER 5:-
+Variables defined in the global scope are known as global variables .there is typically only one global scope in a Python program. 
+The global scope represents the outermost level of the program and is accessible throughout the entire program.
+Local Scopes: Local scopes are created whenever a function is called. Each function call creates its own local scope. 
+The local scope is where variables defined within the function exist and can be accessed. These variables are known as
+local variables and are only accessible within the function's scope. 
+
+ANSWER 6:-
+
+def get_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    else:
+        return "F"
+
+grade1 = get_grade(85)
+grade2 = get_grade(95)
+
+print(grade1) 
+print(grade2) 
+
+ANSWER 7:-
+In Python, the concepts of "pass by value" and "pass by reference" are not applicable in the same way as in some other programming languages.
+Pass by value:
+In a "pass by value" approach, the value of the argument is copied and passed to the function. 
+Any modifications made to the parameter within the function do not affect the original argument.
+
+Pass by reference:
+In a "pass by reference" approach, a reference or pointer to the argument is passed to the function. 
+Any modifications made to the parameter within the function directly affect the original argument.
+
+
+ANSWER 8:-
+import math
+
+def perform_operations(number):
+    
+    logarithmic_result = math.log(number)
+
+    exponential_result = math.exp(number)
+
+    power_result = math.pow(2, number)
+
+    square_root_result = math.sqrt(number)
+
+    return {
+        'Logarithmic function': logarithmic_result,
+        'Exponential function': exponential_result,
+        'Power function with base 2': power_result,
+        'Square root': square_root_result
+    }
+integer_result = perform_operations(4)
+print(integer_result[logarithmic_result])
+print(integer_result[exponential_result])
+print(integer_result[power_result])
+print(integer_result[square_root_result])
+
+
+ANSWER 9:-
+def get_first_and_last_name(full_name):
+    names = full_name.split(" ")
+    first_name = names[0]  
+    last_name = names[-1]  
+    return first_name, last_name  
+
+
+full_name = "sourabh kumar"
+first_name, last_name = get_first_and_last_name(full_name)
+print("First Name:", first_name)
+print("Last Name:", last_name)
